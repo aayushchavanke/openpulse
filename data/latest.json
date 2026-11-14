@@ -1,0 +1,186 @@
+{
+  "collected_at": "2026-11-14T18:26:13.491Z",
+  "total": 20,
+  "repositories": [
+    {
+      "name": "codecrafters-io/build-your-own-x",
+      "description": "Master programming by recreating your favorite technologies from scratch.",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "stars": 562498,
+      "language": "Markdown",
+      "forks": 52647,
+      "updated_at": "2026-11-14T18:19:36Z"
+    },
+    {
+      "name": "sindresorhus/awesome",
+      "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existing ones]",
+      "url": "https://github.com/sindresorhus/awesome",
+      "stars": 536836,
+      "language": null,
+      "forks": 38420,
+      "updated_at": "2026-11-14T18:22:10Z"
+    },
+    {
+      "name": "public-apis/public-apis",
+      "description": "A collective list of free APIs",
+      "url": "https://github.com/public-apis/public-apis",
+      "stars": 498988,
+      "language": "Python",
+      "forks": 55906,
+      "updated_at": "2026-11-14T18:20:38Z"
+    },
+    {
+      "name": "morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "url": "https://github.com/morluto/rea",
+      "stars": 459402,
+      "language": "TypeScript",
+      "forks": 112612,
+      "updated_at": "2026-11-14T18:22:55Z"
+    },
+    {
+      "name": "freeCodeCamp/freeCodeCamp",
+      "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "stars": 459130,
+      "language": "TypeScript",
+      "forks": 47475,
+      "updated_at": "2026-11-14T18:00:30Z"
+    },
+    {
+      "name": "EbookFoundation/free-programming-books",
+      "description": ":books: Freely available programming books",
+      "url": "https://github.com/EbookFoundation/free-programming-books",
+      "stars": 401587,
+      "language": "Python",
+      "forks": 67848,
+      "updated_at": "2026-11-14T18:00:27Z"
+    },
+    {
+      "name": "openclaw/openclaw",
+      "description": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
+      "url": "https://github.com/openclaw/openclaw",
+      "stars": 394448,
+      "language": "TypeScript",
+      "forks": 82889,
+      "updated_at": "2026-11-14T18:20:12Z"
+    },
+    {
+      "name": "donnemartin/system-design-primer",
+      "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
+      "url": "https://github.com/donnemartin/system-design-primer",
+      "stars": 377863,
+      "language": "Python",
+      "forks": 59283,
+      "updated_at": "2026-11-14T18:18:24Z"
+    },
+    {
+      "name": "nilbuild/developer-roadmap",
+      "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
+      "url": "https://github.com/nilbuild/developer-roadmap",
+      "stars": 371999,
+      "language": "TypeScript",
+      "forks": 46395,
+      "updated_at": "2026-11-14T18:17:40Z"
+    },
+    {
+      "name": "jwasham/coding-interview-university",
+      "description": "A complete computer science study plan to become a software engineer.",
+      "url": "https://github.com/jwasham/coding-interview-university",
+      "stars": 364367,
+      "language": null,
+      "forks": 85920,
+      "updated_at": "2026-11-14T18:12:44Z"
+    },
+    {
+      "name": "awesome-selfhosted/awesome-selfhosted",
+      "description": "A list of Free Software network services and web applications which can be hosted on your own servers",
+      "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+      "stars": 337015,
+      "language": null,
+      "forks": 15836,
+      "updated_at": "2026-11-14T18:22:19Z"
+    },
+    {
+      "name": "vinta/awesome-python",
+      "description": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
+      "url": "https://github.com/vinta/awesome-python",
+      "stars": 334726,
+      "language": "Python",
+      "forks": 29103,
+      "updated_at": "2026-11-14T18:23:06Z"
+    },
+    {
+      "name": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "url": "https://github.com/mattpocock/skills",
+      "stars": 324352,
+      "language": "Shell",
+      "forks": 27226,
+      "updated_at": "2026-11-14T18:24:44Z"
+    },
+    {
+      "name": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "url": "https://github.com/obra/superpowers",
+      "stars": 317554,
+      "language": "Shell",
+      "forks": 28281,
+      "updated_at": "2026-11-14T18:25:24Z"
+    },
+    {
+      "name": "affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "url": "https://github.com/affaan-m/ECC",
+      "stars": 302840,
+      "language": "JavaScript",
+      "forks": 44668,
+      "updated_at": "2026-11-14T18:25:44Z"
+    },
+    {
+      "name": "practical-tutorials/project-based-learning",
+      "description": "Curated list of project-based tutorials",
+      "url": "https://github.com/practical-tutorials/project-based-learning",
+      "stars": 289743,
+      "language": "Python",
+      "forks": 36837,
+      "updated_at": "2026-11-14T18:01:12Z"
+    },
+    {
+      "name": "deepseek-ai/deepseek-harness",
+      "description": "DeepSeek Harness: Everything is a Plugin.",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "stars": 281034,
+      "language": "TypeScript",
+      "forks": 34705,
+      "updated_at": "2026-11-14T18:24:45Z"
+    },
+    {
+      "name": "996icu/996.ICU",
+      "description": "Repo for counting stars and contributing. Press F to pay respect to glorious developers.",
+      "url": "https://github.com/996icu/996.ICU",
+      "stars": 277224,
+      "language": null,
+      "forks": 20657,
+      "updated_at": "2026-11-14T17:05:13Z"
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "stars": 263346,
+      "language": "Python",
+      "forks": 59356,
+      "updated_at": "2026-11-14T18:20:07Z"
+    },
+    {
+      "name": "trimstray/the-book-of-secret-knowledge",
+      "description": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.",
+      "url": "https://github.com/trimstray/the-book-of-secret-knowledge",
+      "stars": 258472,
+      "language": null,
+      "forks": 14873,
+      "updated_at": "2026-11-14T18:25:23Z"
+    }
+  ]
+}
