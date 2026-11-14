@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore popular open-source projects, developer tools and the technologies shaping software.">
+  <meta name="theme-color" content="#0b1020">
+  <title>OpenPulse | Open-source intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="OpenPulse home"><span class="brand-mark">◉</span><span>open<span class="brand-accent">pulse</span></span></a>
+    <nav aria-label="Main navigation">
+      <a class="active" href="#trending">Trending</a><a href="#about">About</a>
+    </nav>
+    <a class="github-link" href="https://github.com/aayushchavanke/openpulse" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="pulse-dot"></span> OPEN-SOURCE INTELLIGENCE</div>
+      <h1>Find the signal<br>in <span>open source.</span></h1>
+      <p class="hero-copy">A clearer view of the projects, tools and ideas shaping the developer ecosystem. Explore what the community is building.</p>
+      <div class="hero-actions"><a class="primary-button" href="#trending">Explore repositories <span>↓</span></a><span class="updated" id="updated">Preparing the latest snapshot…</span></div>
+      <div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div>
+    </section>
+    <section class="stats" aria-label="Dataset overview">
+      <div class="stat"><span class="stat-label">PROJECTS TRACKED</span><strong id="project-count">—</strong></div>
+      <div class="stat"><span class="stat-label">LANGUAGES FOUND</span><strong id="language-count">—</strong></div>
+      <div class="stat"><span class="stat-label">TOTAL STARS</span><strong id="star-count">—</strong></div>
+      <div class="stat"><span class="stat-label">DATA SOURCE</span><strong class="source-stat">GitHub API</strong></div>
+    </section>
+    <section class="content-section" id="trending">
+      <div class="section-heading"><div><div class="eyebrow">THE COMMUNITY LANDSCAPE</div><h2>Popular repositories</h2><p>Projects with the highest star counts in our current GitHub snapshot.</p></div><span class="live-label"><span class="pulse-dot"></span> LATEST SNAPSHOT</span></div>
+      <div class="toolbar"><label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Search projects or descriptions…" autocomplete="off"></label><select id="language-filter" aria-label="Filter by language"><option value="">All languages</option></select><select id="sort" aria-label="Sort repositories"><option value="stars">Most stars</option><option value="forks">Most forks</option><option value="name">Name A–Z</option></select></div>
+      <div id="repo-list" class="repo-grid"><div class="loading-card">Loading repository data…</div></div>
+      <div id="empty-state" class="empty-state" hidden>No repositories match your search. Try another term or language.</div>
+      <p class="data-note">Repository names, descriptions and metrics are sourced from the GitHub public API. Star counts are a snapshot, not a measure of software quality.</p>
+    </section>
+    <section class="about-section" id="about"><div class="about-symbol">✳</div><div><div class="eyebrow">WHY OPENPULSE</div><h2>Less noise. More discovery.</h2><p>OpenPulse is an independent project exploring the open-source ecosystem through public data. We aim to make discovery easier with clear metrics, useful comparisons and transparent methods.</p></div></section>
+  </main>
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">◉</span><span>open<span class="brand-accent">pulse</span></span></a><span>Built for curious developers. Data from GitHub.</span><a href="https://github.com/aayushchavanke/openpulse" target="_blank" rel="noreferrer">View source ↗</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
