@@ -1,0 +1,111 @@
+{
+  "name": "OP-02 - Editorial Intelligence (Qwen 2.5)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "openpulse/editorial-score",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "op-qwen-001",
+      "name": "Webhook Intake",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        220,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const x = $input.first().json.body || $input.first().json;\nconst prompt = `You are the OpenPulse editorial desk. Audience: broad intellectual interests including technology, AI, science, space, research, philosophy, history and culture.\nAssess the candidate story. Return ONLY valid JSON with keys: category (technology, AI, science, space, research, philosophy, history, culture, other), relevance_score (integer 1-10), originality_angle (one sentence), audience_value (one sentence), risk_flags (array), decision (select or reject).\nBe conservative. Reject thin, sensational, duplicate or low-value topics. Do not invent facts.\nTITLE: ${x.title || \"\"}\nSUMMARY: ${x.summary || \"\"}\nSOURCE: ${x.link || \"\"}`;\nreturn [{json:{prompt}}];"
+      },
+      "id": "op-qwen-002",
+      "name": "Build Prompt",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:11434/api/generate",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ { model: 'qwen2.5-coder:7b', prompt: $json.prompt, stream: false, format: 'json' } }}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "op-qwen-003",
+      "name": "Generate with Qwen 2.5 Coder 7B",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        760,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const raw = $input.first().json.response || \"\";\nlet result;\ntry { result = JSON.parse(raw); } catch (e) { result = {decision:\"review\",parse_error:true,raw}; }\nreturn [{json:{...result,scored_at:new Date().toISOString()}}];"
+      },
+      "id": "op-qwen-004",
+      "name": "Parse Ollama JSON",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1040,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook Intake": {
+      "main": [
+        [
+          {
+            "node": "Build Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Prompt": {
+      "main": [
+        [
+          {
+            "node": "Generate with Qwen 2.5 Coder 7B",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate with Qwen 2.5 Coder 7B": {
+      "main": [
+        [
+          {
+            "node": "Parse Ollama JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "tags": []
+}
